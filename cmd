@@ -1,0 +1,1 @@
+emcc -o game.html main.cpp obstacle.cpp Platform.cpp Player.cpp -Wall -std=c++17 -D_DEFAULT_SOURCE -Wno-missing-braces -s -O1 -Os -s USE_GLFW=3 -s TOTAL_MEMORY=16777216 --preload-file resources -s ASYNCIFY --shell-file C:/raylib/src/shell.html -I. -IC:/raylib/src -IC:/raylib/src/external -L. -LC:/raylib/src -LC:/raylib/src C:/raylib/src/libraylib.a -DPLATFORM_WEB
